@@ -221,8 +221,6 @@ def hdb3_code_display(bits: str) -> None:
                 alterna = True
             impar = not impar
         posicao += 1
-    print(bits_hdb3)
-    print(bits_hdb3_display)
     
     parte_meio = "\t"
     parte_positiva1 = "\t"
@@ -305,14 +303,56 @@ def hdb3_code_display(bits: str) -> None:
     print(parte_negativa2)   
         
 
-teste = "1110000000010100"
+seg_a = "1110000000010100"
+seg_b = "0100001011101001"
 
-clock(len(teste))
+# print("Clock:")
+# clock(len(seg_a))
+# print("\nInformação:")
+# informacao(seg_a)
+# print("\nPseudoternary:")
+# pseudoternary_display(seg_a)
+# print()
 
-informacao(teste)
+# print("Clock:")
+# clock(len(seg_b))
+# print("\nInformação:")
+# informacao(seg_b)
+# print("\nPseudoternary:")
+# pseudoternary_display(seg_b)
+# print()
 
-pseudoternary_display(teste)
+# print()
+# print("Clock:")
+# clock(len(seg_a))
+# print("\nInformação:")
+# informacao(seg_a)
+# print("\nHDB3::")
+# hdb3_code_display(seg_a)
+# print()
 
-manchester_code_display(teste)
+# print("Clock:")
+# clock(len(seg_b))
+# print("\nInformação:")
+# informacao(seg_b)
+# print("\nHDB3:")
+# hdb3_code_display(seg_b)
+# print()
 
-hdb3_code_display(teste)
+
+print()
+print("Clock:")
+clock(len(seg_a))
+print("\nInformação:")
+informacao(seg_a)
+print("\nManchester:")
+manchester_code_display(seg_a)
+print()
+
+print("Clock:")
+clock(len(seg_b))
+print("\nInformação:")
+informacao(seg_b)
+print("\nManchester:")
+manchester_code_display(seg_b)
+print()
